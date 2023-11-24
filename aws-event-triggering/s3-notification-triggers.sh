@@ -9,11 +9,11 @@ aws_account_id=$(aws sts get-caller-identity --query 'Account' --output text)
 echo "AWS Account ID: $aws_account_id"
 
 # Set AWS region and bucket name
-aws_region="us-east-1"
-bucket_name="abhishek-ultimate-bucket"
+aws_region="ap-south-1"
+bucket_name="vishwa808853"
 lambda_func_name="s3-lambda-function"
 role_name="s3-lambda-sns"
-email_address="zyz@gmail.com"
+email_address="vishwanathkarkale@gmail.com"
 
 # Create IAM Role for the project
 role_response=$(aws iam create-role --role-name s3-lambda-sns --assume-role-policy-document '{
